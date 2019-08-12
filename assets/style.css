@@ -1,0 +1,36 @@
+body {
+    background-color: #34435E;
+    padding: 20px;
+}
+
+.topic-btn {
+    margin: 5px;
+}
+
+.jumbotron {
+    padding: 25px;
+}
+
+#sport-topic {
+    margin: 20px 20px 0 0;
+}
+
+#container {
+    margin-bottom: 20px;
+}
+
+#gif-dump {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img {
+    box-shadow: 2px 1px 24px -1px rgba(0,0,0,0.75);  
+    height: 200px;
+    width: 275px;
+    object-fit: cover;
+}
+
+

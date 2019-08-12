@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giftastic!</title>
-<!-- link to css sheet here -->
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link to css sheet here -->
     <link rel="stylesheet" href="./assets/style.css">
+
 </head>
 <body>
+    <div class="jumbotron">
+        <h1 class="display-4">Gif generator, sports-style!</h1>
+        <p class="lead">Have fun displaying gifs for the pre-selected sports, and if you get bored, add your own sports buttons!</p>
+        <hr class="my-4">
+        <p>When you're done with the gifs you've chosen, you can clear the content on the page.</p>
+    </div>
     <div id="container">
+        <!-- buttons to initiate ajax request -->
         <div id="gif-btn"></div>
 
         <!-- search bar to add more buttons -->
-        <input type="text">
+        <input id='sport-topic' type="text" placeholder="Type in a sport">
+        <button id='submit' class="btn btn-info">Submit</button>
+        <button id='clear' class="btn btn-info">Clear content</button>
 
-        <div id="gif-dump"></div>
-
+        <!-- display gifs and ratings -->
     </div>
+    <div id="gif-dump" class="lead"></div>
 
 
 
@@ -28,6 +40,6 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <!-- link to JS sheet here -->
-    <link rel="stylesheet" href="./assets/javascript.js">
+    <script src="/assets/javascript.js"></script>
 </body>
 </html>
