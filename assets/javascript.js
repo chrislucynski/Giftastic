@@ -74,7 +74,6 @@ function giphyPull(){
     url: queryUrl,
     method: "GET"
   }).then(function(response) {
-    console.log(response)
     
     // store JSON data in variables
     for(var i = 0; i < response.data.length; i++) {
@@ -83,7 +82,7 @@ function giphyPull(){
       stillImage = objectData.images.original_still.url
       animatedImage = objectData.images.fixed_height.url
           renderContent()
-        }
-    });
+    }
+  });
 }
 
